@@ -1,16 +1,10 @@
-from libs import Employee, Human
+from libs import Employee, Human, check
 
 def main():
     """Main"""
-    bf = Human("Buttfucker", 3000)
-    bf.name = "Donald"
-    print(bf.name)
-    print(bf.age)
-
+    bf = Human("Donald", 40)
     admin = Employee("admin", bf.name, bf.age)
-    print(admin.position)
-    print(admin.name)
-    print(admin.age)
+    check(admin)
 
 if __name__ == "__main__":
     main()
